@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 float alpha = 0.89;
-static char *font = "DepartureMono Nerd Font:pixelsize=14:antialias=true:autohint=true:style=Regular";
+static char *font = "SpaceMono Nerd Font:pixelsize=15:antialias=true:autohint=true:style=Bold";
 static int borderpx = 2;
 char *xdndescchar = " !\"#$&'()*;<>?[\\]^`{|}~";
 unsigned int scrollback_lines = 2000;
