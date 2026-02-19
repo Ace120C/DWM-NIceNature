@@ -1,10 +1,6 @@
-feh --bg-fill Pictures/Wallpapers/NN.png &
+feh --bg-fill Pictures/Wallpapers/RK.jpg &
 picom &
-exec slstatus &
-
-export XCURSOR_THEME=NiceNature
-export XCURSOR_SIZE=24
-xrdb -merge ~/.Xresources
-xsetroot -cursor_name left_ptr
-
+xrandr --output HDMI-A-0 --mode 1920x1080 --rate 120
+slstatus &
+export QT_QPA_PLATFORMTHEME=gtk3
 exec dwm
