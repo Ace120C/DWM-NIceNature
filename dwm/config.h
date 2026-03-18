@@ -30,6 +30,7 @@ static const Rule rules[] = {
     { "Firefox",      NULL,     NULL,  1 << 8,    0,          0,          1,         -1 },
     { "st-256color",  NULL,     NULL,  0,         0,          1,          0,         -1 },
     { NULL,	NULL, "Event Tester",  0,	  0,	      0,	  1,	     -1 },
+    { NULL,	NULL, "umamusume: NN", 0,	  1,	      0,	  1,	     -1 },
 };
 
 /* layout(s) */
@@ -69,6 +70,7 @@ static const char *screenshot[] = {"scrot", "-e", "mv $f ~/Pictures/screenshots"
 static const char *pcmanfm[] = {"pcmanfm", NULL};
 static const char *emoji[] = {"/bin/sh", "-c", "cat /home/ace/emojis/emojis.txt | dmenu -i -l 10 -fn 'Monospace-14' -nb '#000000' -nf '#9370DB' -sb '#4B0082' -sf '#ffffff' | awk '{print $1}' | tr -d '\n' | xclip -sel clip", NULL};
 static const char *clipmenu[] = {"/bin/sh", "-c", "clipmenu -i -fn 'Monospace-14' -nb '#000000' -nf '#9370DB' -sb '#4B0082' -sf '#ffffff'", NULL };
+static const char *poweroff[] = {"poweroff", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -77,6 +79,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_f,	   spawn,	   {.v = firefoxcmd } },
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   {.v = pavucontrol } },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = pcmanfm } },
+	{ MODKEY|ShiftMask,		XK_o,	   spawn,	   {.v = poweroff } },
 	{ 0, 	      XF86XK_MonBrightnessUp,	   spawn,	   {.v = brightnessUp } },	
 	{ 0, 	    XF86XK_MonBrightnessDown,	   spawn,	   {.v = brightnessDown } },
 	{ MODKEY, 			XK_s,	   spawn,	   {.v = screenshot } },
