@@ -31,6 +31,7 @@ static const Rule rules[] = {
     { "st-256color",  NULL,     NULL,  0,         0,          1,          0,         -1 },
     { NULL,	NULL, "Event Tester",  0,	  0,	      0,	  1,	     -1 },
     { NULL,	NULL, "umamusume: NN", 0,	  1,	      0,	  1,	     -1 },
+    { NULL,     NULL, "Netmarble Launcher",  0,	  1,	      0, 	  1, 	     -1 },
 };
 
 /* layout(s) */
